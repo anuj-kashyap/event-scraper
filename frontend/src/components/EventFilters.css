@@ -1,0 +1,81 @@
+/* src/components/EventFilters.css */
+.event-filters {
+  background-color: white;
+  border-radius: var(--border-radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+}
+
+.filters-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  align-items: end;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.search-input,
+.filter-select {
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 14px;
+}
+
+.date-group {
+  min-width: 250px;
+}
+
+.date-inputs {
+  display: flex;
+  gap: 8px;
+}
+
+.date-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 14px;
+}
+
+.sort-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.sort-controls select {
+  flex: 1;
+}
+
+.clear-filters-btn {
+  align-self: flex-end;
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .filters-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .date-inputs {
+    flex-direction: column;
+  }
+  
+  .sort-controls {
+    flex-direction: column;
+  }
+}

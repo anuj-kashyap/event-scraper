@@ -1,0 +1,29 @@
+/* src/components/LoadingSpinner.css */
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.loading-spinner.small .spinner {
+  width: 16px;
+  height: 16px;
+}
+
+.loading-spinner.medium .spinner {
+  width: 24px;
+  height: 24px;
+}
+
+.loading-spinner.large .spinner {
+  width: 32px;
+  height: 32px;
+}
+
+.loading-text {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin: 0;
+}
